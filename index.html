@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aula quinta cadastro de clientes</title>
+    <title>Cadastro de Clientes aula quinta</title>
     <link rel="stylesheet" href="style.css">
-
+    
 </head>
-
 <body>
-    <div class="imagem">
-           
-            <img src="https://logodix.com/logo/814207.png" alt="imagem">
-        </div>
 
-    <div class="">
+    <div class="container">
+        <h2>Cadastro de Clientes</h2>
+        <form action="#">
+            <div class="campo">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" required placeholder="Ex: João Silva">
+            </div>
 
-        <h1>Boa noite</h1>
-        <hr>
-        <div class="form-container">
-            <h2>Cadastro de clientes</h2>
-            <form action="/submit" method="post">
+            <div class="campo">
+                <label>Sexo</label>
+                <div class="sexo-group">
+                    <label class="sexo-option"><input type="radio" name="sexo" value="M"> Masc.</label>
+                    <label class="sexo-option"><input type="radio" name="sexo" value="F"> Fem.</label>
+                    <label class="sexo-option"><input type="radio" name="sexo" value="O"> Outro</label>
+                </div>
+            </div>
 
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required placeholder="seu@email.com">
+            </div>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" required placeholder="No mínimo 6 caracteres">
+            </div>
 
-                <button type="submit">Cadastrar</button>
-            </form>
-        </div>
-
+            <button type="submit">Cadastrar Agora</button>
+        </form>
     </div>
 
 </body>
-
 </html>

@@ -1,40 +1,80 @@
-body {
-    background-color: aquamarine;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-}
+        
+        body {
+            background-color: hsla(195, 100%, 50%, 0.156);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-h1 {
-    color: brown;
+        /* Container do Formulário */
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
 
-}
+        h2 { color: #1c1e21; margin-bottom: 20px; text-align: center; }
 
-p {
-    text-align: center;
-    color: blueviolet;
-}
+        .campo { margin-bottom: 15px; }
 
-h2 {
-    color: brown;
+        label { 
+            display: block; 
+            margin-bottom: 8px; 
+            color: #4b4f56; 
+            font-weight: 600;
+            font-size: 14px;
+        }
 
-}
+        /* Estilo dos Inputs de Texto, Email e Senha */
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
 
-button {
-    border-color: brown;
-    color: brown;
+        input:focus {
+            border-color: #1877f2;
+            outline: none;
+        }
 
-}
+        /* Estilo para a seção de Sexo */
+        .sexo-group {
+            display: flex;
+            gap: 15px;
+            padding: 10px 0;
+        }
 
-label {
-    color: black;
-}
+        .sexo-option {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            cursor: pointer;
+        }
 
-.imagem {
-    text-align: right;
-    height: 00px;  
-    border-color: black; 
-}
+        .sexo-option input { margin-right: 5px; }
 
-img {
-    width: 100px;
-}
+        /* Botão de Envio */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #e60d3f;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        button:hover { background-color: #09d71e; }
+    
